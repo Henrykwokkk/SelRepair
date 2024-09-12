@@ -28,7 +28,7 @@ python unixcoder_embedding.py
 ```shell
 python RAG_construction.py
 ```
-The processed dataset can be downlaoded from [Zenodo]
+The processed dataset can be downlaoded from [Zenodo](https://zenodo.org/records/13752229)
 
 ## Fine-tuning and Validation
 1.Fine-tuning
