@@ -104,8 +104,8 @@ data_type = ['train','val','test']
 token_length = ['50','50-100']
 for j in token_length:
     for i in data_type:
-        with open('Tufano_dataset/datasets/{}/src-{}.txt'.format(j,i),'r',encoding='utf-8') as f,open(
-            'Tufano_dataset/datasets/{}/src_source_code_unixAST_{}.json'.format(j,i),'w',encoding='utf-8') as g:
+        with open('Tufano_dataset/{}/src-{}.txt'.format(j,i),'r',encoding='utf-8') as f,open(
+            'Tufano_dataset/{}/src_source_code_unixAST_{}.json'.format(j,i),'w',encoding='utf-8') as g:
             datas = f.readlines()
             num = 0
             for data in datas:
