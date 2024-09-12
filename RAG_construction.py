@@ -37,7 +37,7 @@ def similarity_computing(target_data):
 
 def similarity_computing_100(target_data):
     distance_list = []  
-    with open('Tufano_dataset/datasets/50/src_source_code_unixAST_embedding_1000_codebase.json','r') as f1:
+    with open('Tufano_dataset/datasets/50-100/src_source_code_unixAST_embedding_1000_codebase.json','r') as f1:
         rag_datas = f1.readlines()
         for rag_data in rag_datas:
             nn = json.loads(rag_data)
