@@ -19,10 +19,10 @@ code_bleus = []
 bleus4_2 = []
 lengths = []
 start_time = time.time()
-with open ("./Tufano_dataset/datasets/50/src_source_code_unixAST_embedding_test_remaining_retrival.json",'r') as f1, open(
-    "./Tufano_dataset/datasets/50/tgt-test_remaining.txt",'r') as f2,open(
-        './Tufano_dataset/datasets/50/src_source_code_unixAST_embedding_1000_codebase.json','r') as f3,open(
-            './Tufano_dataset/datasets/50/tgt_1000_codebase.txt','r') as f4:
+with open ("./Tufano_dataset/50/src_source_code_unixAST_embedding_test_remaining_retrival.json",'r') as f1, open(
+    "./Tufano_dataset/50/tgt-test_remaining.txt",'r') as f2,open(
+        './Tufano_dataset/50/src_source_code_unixAST_embedding_1000_codebase.json','r') as f3,open(
+            './Tufano_dataset/50/tgt_1000_codebase.txt','r') as f4:
 
     buggy_codes = f1.readlines()
     fixed_codes = f2.readlines()
