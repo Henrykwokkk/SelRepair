@@ -21,8 +21,8 @@ token_length = ['50','50-100']
 
 for i in data_type:
     for j in token_length:
-        with open('Tufano_dataset/datasets/{}/src_source_code_unixAST_{}.json'.format(j,i),'r',encoding='utf-8') as f,open(
-            'Tufano_dataset/datasets/{}/src_source_code_unixAST_embedding_{}.json'.format(j,i),'w',encoding='utf-8') as g:
+        with open('Tufano_dataset/{}/src_source_code_unixAST_{}.json'.format(j,i),'r',encoding='utf-8') as f,open(
+            'Tufano_dataset/{}/src_source_code_unixAST_embedding_{}.json'.format(j,i),'w',encoding='utf-8') as g:
             datas = f.readlines()
             for index,data in enumerate(datas):
                 print(index)
