@@ -82,7 +82,7 @@ if 'checkpoint' not in model_name:
     model.resize_token_embeddings(len(tokenizer))
 
 logging.info("Loading datasets...")
-train_dataset = BugFixDataset(tokenizer, "./Tufano_dataset/datasets/50/src_source_code_unixAST_embedding_train_remaining_retrival.json", "./Tufano_dataset/datasets/50/tgt-train_remaining.txt",'Tufano_dataset/datasets/50/src_source_code_unixAST_embedding_1000_codebase.json','Tufano_dataset/datasets/50/tgt_1000_codebase.txt',)
+train_dataset = BugFixDataset(tokenizer, "./Tufano_dataset/50/src_source_code_unixAST_embedding_train_remaining_retrival.json", "./Tufano_dataset/50/tgt-train_remaining.txt",'Tufano_dataset/50/src_source_code_unixAST_embedding_1000_codebase.json','Tufano_dataset/50/tgt_1000_codebase.txt',)
 train_loader = DataLoader(train_dataset, batch_size=1, shuffle=True)
 
 
