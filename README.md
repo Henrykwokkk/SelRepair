@@ -40,6 +40,5 @@ accelerate launch finetune_trainer_seletion_rag_50-100.py
 2.Validation
 ```shell
 python rag_evaluation_50.py
-
 python rag_evaluation_50-100.py
 ```
