@@ -33,16 +33,8 @@ The processed dataset can be downlaoded from [Zenodo](https://zenodo.org/records
 ## Fine-tuning and Validation
 1.Fine-tuning
 ```shell
-python finetune_trainer_seletion_rag_50.py
-
-python finetune_trainer_seletion_rag_50-100.py
-```
-
-1.Fine-tuning
-```shell
-python finetune_trainer_seletion_rag_50.py
-
-python finetune_trainer_seletion_rag_50-100.py
+accelerate launch finetune_trainer_seletion_rag_50.py
+accelerate launch finetune_trainer_seletion_rag_50-100.py
 ```
 
 2.Validation
