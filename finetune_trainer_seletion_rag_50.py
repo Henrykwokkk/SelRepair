@@ -23,7 +23,7 @@ class BugFixDataset(Dataset):
         self.bugs = open(bugs_file, "r").readlines()
         self.fixes = open(fixes_file, "r").readlines()
         self.bug_codebase = open(bug_codebase_file, "r").readlines()
-        self.fix_codebase = open(fix_codebase_file, "r").readlines()    #txt文档
+        self.fix_codebase = open(fix_codebase_file, "r").readlines()   
         assert len(self.bugs) == len(self.fixes)
         self.max_length = max_length
         self.threshold = rag_threshold
