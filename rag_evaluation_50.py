@@ -12,8 +12,6 @@ tokenizer = AutoTokenizer.from_pretrained(checkpoint)
 model = AutoModelForCausalLM.from_pretrained(checkpoint,torch_dtype=torch.bfloat16).to(device)
 
 
-# 定义新的特殊token
-
 em_correction = []
 code_bleus = []
 bleus4_2 = []
