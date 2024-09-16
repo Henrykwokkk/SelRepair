@@ -30,7 +30,7 @@ def similarity_computing(target_data):
             unixAST_similarity = cosine_similarity(target_data['unixcoder_seq_embedding'],nn['unixcoder_seq_embedding'])[0,0]
             similarity = 0.5*code_similarity+0.5*unixAST_similarity
             distance_list.append(similarity)
-    nearest_indices,nearest_similarities = get_largest_indices(distance_list,5) #选择最相似的五条数据
+    nearest_indices,nearest_similarities = get_largest_indices(distance_list,5)
     target_data['retrival_index'] = nearest_indices
     target_data['retrival_similarity'] = nearest_similarities
     return target_data
@@ -45,7 +45,7 @@ def similarity_computing_100(target_data):
             unixAST_similarity = cosine_similarity(target_data['unixcoder_seq_embedding'],nn['unixcoder_seq_embedding'])[0,0]
             similarity = 0.5*code_similarity+0.5*unixAST_similarity
             distance_list.append(similarity)
-    nearest_indices,nearest_similarities = get_largest_indices(distance_list,5) #选择最相似的五条数据
+    nearest_indices,nearest_similarities = get_largest_indices(distance_list,5)
     target_data['retrival_index'] = nearest_indices
     target_data['retrival_similarity'] = nearest_similarities
     return target_data
