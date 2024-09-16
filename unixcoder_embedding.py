@@ -37,35 +37,3 @@ for i in data_type:
                 g.write(json.dumps(mm))
                 g.write('\n')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#从训练集拆分2000条数据作为RAG的内容
-# with open('Tufano_dataset/datasets/50/buggy_source_code_sbt_train.json','r',encoding='utf-8') as f1,open(
-#     'Tufano_dataset/datasets/50/fixed_source_code.txt','r',encoding='utf-8') as f2:
-#     buggy_datas = f1.readlines()
-#     fixed_datas = f2.readlines()
-#     with open('Tufano_dataset/datasets/50/buggy_source_code_sbt_train_RAG.json','w',encoding='utf-8') as g1:
-#         for buggy_data,fixed_data in zip(buggy_datas[:2000],fixed_datas[:2000]):
